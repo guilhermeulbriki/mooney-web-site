@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 interface SideMenuProps {
   isHidden: boolean;
@@ -11,7 +11,7 @@ interface HamburguerMenuProps {
 export const HeaderComponent = styled.header`
   width: 100vw;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   height: 72px;
   box-shadow: 0px 2px 6px #e0e5ef;
   background: var(--content-background);
@@ -139,6 +139,7 @@ export const HamburguerMenu = styled.button<HamburguerMenuProps>`
       height: 2px;
       width: 32px;
       margin-bottom: 8px;
+      background: var(--primary);
       border: 1.5px solid var(--primary);
       border-radius: 2px;
       transition: transform 0.4s;
@@ -155,6 +156,7 @@ export const HamburguerMenu = styled.button<HamburguerMenuProps>`
     hr.two {
       height: 1px;
       width: 16px;
+      background: var(--primary);
       border: 1.5px solid var(--primary);
       border-radius: 2px;
       transition: transform 0.4s;
@@ -171,7 +173,7 @@ export const HamburguerMenu = styled.button<HamburguerMenuProps>`
 
 export const SideMenu = styled.aside<SideMenuProps>`
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   right: 0px;
   top: 80px;
   background: var(--primary);

@@ -43,12 +43,55 @@ export default createGlobalStyle`
     color: var(--gradient-content);
   }
 
-  input, button, textarea, p { 
+  input, button, textarea, p, strong, span, ul, li { 
     font-family: 'Inter', sans-serif;
   }
 
   button, li {
     cursor: pointer;
+  }
 
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 48px;
+
+    @media (max-width: 680px) {
+      font-size: 20px;
+      line-height: 30px;
+      width: 80%;
+      min-width: 272px;
+    }
+  }
+
+  h3 {
+    background: var(--gradient-content);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    font-weight: 600;
+
+    @media (max-width: 680px) {
+      font-size: 16px;
+      line-height: 20.8px;
+      text-align: center;
+      width: 80%;
+      min-width: 272px;
+    }
+  }
+
+  p {
+    color: var(--text-gray);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+
+    @media (max-width: 680px) {
+      font-size: 16px;
+      line-height: 22.4px;
+      text-align: center;
+      width: 80%;
+      min-width: 272px;
+    }
   }
 `;
