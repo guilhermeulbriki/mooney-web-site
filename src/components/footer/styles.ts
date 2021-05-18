@@ -136,12 +136,33 @@ export const Container = styled.footer`
   }
 
   @media (max-width: 680px) {
-    min-height: 300px;
+    min-height: 400px;
 
     > div {
+      flex-direction: column;
+
       .mooney {
         margin-top: 0px;
         height: auto;
+
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+
+        div {
+          align-items: center;
+
+          & + div {
+            margin-top: 32px;
+          }
+        }
+
+        .logo {
+          > img {
+            margin-bottom: 8px;
+          }
+        }
       }
 
       .links {
@@ -149,7 +170,10 @@ export const Container = styled.footer`
       }
 
       .stores {
-        top: 64px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: 64px;
       }
     }
   }

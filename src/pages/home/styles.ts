@@ -638,10 +638,12 @@ export const Feedbacks = styled.div`
     text-align: center;
 
     h3 {
+      margin: 0 auto;
       margin-bottom: 16px;
     }
 
     h2 {
+      margin: 0 auto;
       margin-bottom: 64px;
     }
 
@@ -658,6 +660,10 @@ export const Feedbacks = styled.div`
         display: flex;
         justify-content: center;
         flex: nowrap;
+
+        @media (max-width: 680px) {
+          min-width: 1670px;
+        }
       }
 
       ::-webkit-scrollbar {
@@ -690,6 +696,40 @@ export const FeedbackCard = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 680px) {
+    padding: 24px;
+    height: 346px;
+    width: 217px;
+
+    & + article {
+      margin-left: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 19.6px;
+      text-align: left;
+      min-width: 169px;
+      max-height: 214px;
+      display: -webkit-box;
+      -webkit-line-clamp: 9;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    section {
+      strong {
+        margin-bottom: 4px;
+      }
+
+      span {
+        font-size: 12px;
+        line-height: 16.8px;
+      }
+    }
+  }
 
   & + article {
     margin-left: 64px;
@@ -738,6 +778,10 @@ export const Ready = styled.div`
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
+      @media (max-width: 680px) {
+        margin: 0 auto;
+      }
 
       h2 {
         margin-bottom: 8px;
