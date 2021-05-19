@@ -10,6 +10,7 @@ interface HamburguerMenuProps {
 
 export const HeaderComponent = styled.header`
   width: 100vw;
+  max-width: 100%;
   position: fixed;
   z-index: 10;
   height: 72px;

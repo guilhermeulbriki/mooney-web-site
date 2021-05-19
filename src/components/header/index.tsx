@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import { HeaderComponent, SideMenu, HamburguerMenu } from './styles';
 import Button from '../button';
@@ -23,7 +23,9 @@ const Header: React.FC = () => {
           <img src={logo} alt="Mooney logo" />
 
           <ul>
-            <li className={pathname === '/' ? 'active' : ''}>Início</li>
+            <li className={pathname === '/' ? 'active' : ''}>
+              <Link to="/">Início</Link>
+            </li>
             <li
               className={
                 pathname === '/mooneyedu' ?? 'mooneyapp' ? 'active' : ''
@@ -33,10 +35,12 @@ const Header: React.FC = () => {
               Soluções
               <ul>
                 <li className={pathname === '/mooneyedu' ? 'active' : ''}>
-                  <span>
-                    <img src={eduIcon} alt="MooneyEdu" />
-                    #MooneyEdu
-                  </span>
+                  <Link to="/mooneyedu">
+                    <span>
+                      <img src={eduIcon} alt="MooneyEdu" />
+                      #MooneyEdu
+                    </span>
+                  </Link>
                 </li>
                 <hr />
                 <li className={pathname === 'mooneyapp' ? 'active' : ''}>
@@ -79,7 +83,9 @@ const Header: React.FC = () => {
 
       <SideMenu isHidden={!showMenu}>
         <ul>
-          <li className={pathname === '/' ? 'active' : ''}>Início</li>
+          <li className={pathname === '/' ? 'active' : ''}>
+            <Link to="/mooneyedu">Início</Link>
+          </li>
           <li
             className={pathname === '/mooneyedu' ?? 'mooneyapp' ? 'active' : ''}
             id="dropdown"
@@ -87,7 +93,7 @@ const Header: React.FC = () => {
             Soluções
             <ul>
               <li className={pathname === '/mooneyedu' ? 'active' : ''}>
-                #MooneyEdu
+                <Link to="/mooneyedu">#MooneyEdu</Link>
               </li>
               <li className={pathname === 'mooneyapp' ? 'active' : ''}>
                 #MooneyApp

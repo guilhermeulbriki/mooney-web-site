@@ -12,6 +12,7 @@ const scrollIconAnimation = keyframes`
 
 export const Content = styled.main`
   width: 100vw;
+  max-width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -70,7 +71,7 @@ export const HeaderContent = styled.header`
     }
   }
 
-  @media (max-width: 1380px) {
+  @media (max-width: 1280px) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -95,6 +96,7 @@ export const HeaderContent = styled.header`
 
 export const Partners = styled.div`
   width: 100vw;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   background: var(--content-dividers);
@@ -108,6 +110,7 @@ export const Partners = styled.div`
 
   div {
     width: 100vw;
+    max-width: 100%;
 
     h2 {
       margin: 0 auto;
@@ -191,6 +194,7 @@ const pigAnimation = keyframes`
 
 export const WhyExist = styled.div`
   width: 100vw;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 140px;
@@ -301,12 +305,14 @@ export const WhyExist = styled.div`
 
 export const OurStrategy = styled.div`
   width: 100vw;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 180px;
 
   div {
     width: 100vw;
+    max-width: 100%;
 
     header {
       width: 100%;
@@ -416,6 +422,7 @@ export const StrategyCard = styled.aside`
 
 export const Soluction = styled.div`
   width: 100vw;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   min-height: 1511px;
@@ -628,6 +635,7 @@ export const MooneyApp = styled.article`
 
 export const Feedbacks = styled.div`
   width: 100vw;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   background: var(--content-dividers);
@@ -763,6 +771,7 @@ export const FeedbackCard = styled.article`
 
 export const Ready = styled.div`
   width: 100vw;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   margin: 140px 0;

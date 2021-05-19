@@ -26,8 +26,8 @@ import readyToBePart from '../../assets/images/readyToBePart.png';
 import mooneyEdu from '../../assets/images/mooneyEdu.png';
 import mooneyApp from '../../assets/images/mooneyApp.png';
 import whatWeDoSvg from '../../assets/images/illustrations/whatWeDo.svg';
-import storeApple from '../../assets/images/social/store-google.svg';
-import storeGoogle from '../../assets/images/social/store-apple.svg';
+import googlePlay from '../../assets/images/social/store-google.svg';
+import appStore from '../../assets/images/social/store-apple.svg';
 
 import {
   Content,
@@ -44,6 +44,7 @@ import {
   FeedbackCard,
   Ready,
 } from './styles';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   return (
@@ -58,9 +59,9 @@ const Home: React.FC = () => {
               humanizada
             </h1>
 
-            <a className="became-partner" href="#">
+            <Link className="became-partner" to="/">
               <Button category="primary">Seja um parceiro</Button>
-            </a>
+            </Link>
 
             <img src={scrollIcon} alt="Scroll" />
           </aside>
@@ -98,9 +99,9 @@ const Home: React.FC = () => {
                 simples e humanizada.
               </p>
 
-              <a href="#">
+              <Link to="/mooneyedu">
                 <Button category="ghost">Saiba mais</Button>
-              </a>
+              </Link>
             </aside>
           </div>
         </WhyExist>
@@ -180,9 +181,9 @@ const Home: React.FC = () => {
                   metodologias modernas e recursos tecnológicos.
                 </p>
 
-                <a href="#">
+                <Link to="/mooneyedu">
                   <Button category="white">Saiba mais</Button>
-                </a>
+                </Link>
               </aside>
 
               <img src={mooneyEdu} alt="MooneyEdu" />
@@ -199,11 +200,17 @@ const Home: React.FC = () => {
                 </p>
 
                 <span>
-                  <a href="#">
-                    <img src={storeGoogle} alt="Store googlee" />
+                  <a
+                    target="blank"
+                    href="https://play.google.com/store?hl=pt_BR&gl=US"
+                  >
+                    <img src={googlePlay} alt="Google play" />
                   </a>
-                  <a href="#">
-                    <img src={storeApple} alt="Store Apple" />
+                  <a
+                    target="blank"
+                    href="https://apps.apple.com/br/app/mooney/id1509285822"
+                  >
+                    <img src={appStore} alt="App store" />
                   </a>
                 </span>
               </aside>
@@ -300,16 +307,17 @@ const Home: React.FC = () => {
             <aside>
               <h2>Pronto para fazer parte dessa nova revolução?</h2>
               <p>Fale com um de nossos representantes agora mesmo.</p>
-              <a href="#">
+
+              <Link to="/">
                 <Button category="primary">Seja um parceiro</Button>
-              </a>
+              </Link>
             </aside>
 
             <img src={readyToBePart} alt="Ready to be part" />
           </div>
         </Ready>
-        <Footer />
       </Content>
+      <Footer />
     </>
   );
 };

@@ -6,9 +6,9 @@ import Routes from './routes';
 const App: React.FC = () => {
   return (
     <>
-      <Routes />
-
       <GlobalStyle />
+
+      <Routes />
     </>
   );
 };
