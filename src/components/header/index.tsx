@@ -32,7 +32,7 @@ const Header: React.FC = () => {
               }
               id="dropdown"
             >
-              Soluções
+              <Link to="#">Soluções</Link>
               <ul>
                 <li className={pathname === '/mooneyedu' ? 'active' : ''}>
                   <Link to="/mooneyedu">
@@ -44,25 +44,27 @@ const Header: React.FC = () => {
                 </li>
                 <hr />
                 <li className={pathname === 'mooneyapp' ? 'active' : ''}>
-                  <span>
-                    <img src={mobileIcon} alt="MooneyApp" />
-                    #MooneyApp
-                  </span>
+                  <Link to="/mooneyapp">
+                    <span>
+                      <img src={mobileIcon} alt="MooneyApp" />
+                      #MooneyApp
+                    </span>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li
               className={pathname === '/partners' ? 'active tablet' : 'tablet'}
             >
-              Parceiros
+              <Link to="/partners">Parceiros</Link>
             </li>
             <li className={pathname === '/blog' ? 'active tablet' : 'tablet'}>
-              Blog
+              <Link to="/">Blog</Link>
             </li>
             <li
               className={pathname === '/contact' ? 'active tablet' : 'tablet'}
             >
-              Contato
+              <Link to="/contact">Contato</Link>
             </li>
           </ul>
 
@@ -75,9 +77,9 @@ const Header: React.FC = () => {
             <hr className="two" />
           </HamburguerMenu>
 
-          <a className="became-partner" href="#">
+          <Link className="became-partner" to="#">
             <Button category="primary">Seja um parceiro</Button>
-          </a>
+          </Link>
         </div>
       </HeaderComponent>
 
@@ -90,30 +92,30 @@ const Header: React.FC = () => {
             className={pathname === '/mooneyedu' ?? 'mooneyapp' ? 'active' : ''}
             id="dropdown"
           >
-            Soluções
+            <Link to="#">Soluções</Link>
             <ul>
               <li className={pathname === '/mooneyedu' ? 'active' : ''}>
                 <Link to="/mooneyedu">#MooneyEdu</Link>
               </li>
               <li className={pathname === 'mooneyapp' ? 'active' : ''}>
-                #MooneyApp
+                <Link to="/mooneyapp">#MooneyApp</Link>
               </li>
             </ul>
           </li>
           <li className={pathname === '/partners' ? 'active tablet' : 'tablet'}>
-            Parceiros
+            <Link to="/partners">Parceiros</Link>
           </li>
           <li className={pathname === '/blog' ? 'active tablet' : 'tablet'}>
-            Blog
+            <Link to="/#">Blog</Link>
           </li>
           <li className={pathname === '/contact' ? 'active tablet' : 'tablet'}>
-            Contato
+            <Link to="/contact">Contato</Link>
           </li>
         </ul>
 
-        <a onClick={handleShowMenu} className="became-partner" href="#">
+        <Link onClick={handleShowMenu} className="became-partner" to="#">
           <Button category="white">Seja um parceiro</Button>
-        </a>
+        </Link>
       </SideMenu>
     </>
   );

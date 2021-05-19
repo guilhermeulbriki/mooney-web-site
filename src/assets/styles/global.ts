@@ -13,8 +13,8 @@ export default createGlobalStyle`
     --text-silver: #E1E5EC;
 
     --content-background:#F8F9FB;
-    --content-contents: #F2F4F7;
-    --content-dividers: #E9E9EB;
+    --content-contents: #E9E9EB;
+    --content-dividers: #F2F4F7;
 
     --aux-green: #279473;
     --aux-yellow: #FDD547;

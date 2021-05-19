@@ -197,6 +197,10 @@ export const SideMenu = styled.aside<SideMenuProps>`
     width: 100%;
     padding: 8px 0 0 8px;
 
+    a {
+      color: var(--text-white);
+    }
+
     li {
       font-size: 16px;
       font-weight: 300;
@@ -231,7 +235,7 @@ export const SideMenu = styled.aside<SideMenuProps>`
     }
   }
 
-  a {
+  > a {
     position: absolute;
     bottom: 24px;
   }

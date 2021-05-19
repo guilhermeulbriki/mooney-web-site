@@ -20,7 +20,7 @@ export const Content = styled.main`
 `;
 
 export const HeaderContent = styled.header`
-  padding-top: 120px;
+  padding-top: 140px;
   width: 100%;
   max-width: 1216px;
   margin: 0 64px;
@@ -101,7 +101,7 @@ export const Partners = styled.div`
   justify-content: center;
   background: var(--content-dividers);
   box-shadow: 0px 0px 8px #e2e2e2;
-  margin-top: 120px;
+  margin-top: 160px;
   padding-top: 40px;
 
   @media (max-width: 680px) {
