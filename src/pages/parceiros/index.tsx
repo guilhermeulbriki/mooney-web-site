@@ -31,16 +31,14 @@ const Parceiros: React.FC = () => {
       <Container>
         <HeaderContent>
           <aside>
-            <h3>#MooneyEdu</h3>
-            <h1>Educação Financeira de verdade no seu colégio!</h1>
+            <h3>#SejaMooney</h3>
+            <h1>Colégios parceiros que levam a nossa missão!</h1>
             <p>
-              Trabalhamos com o conceito de Alfabetização Financeira, com o
-              objetivo de desenvolver a competência financeira dos alunos de
-              forma integral, dos conceitos técnicos à habilidades
-              socioemocionais.
+              Vamos levar Educação e Alfabetização Financeira de qualidade para
+              seus alunos?
             </p>
 
-            <Link className="became-partner" to="/">
+            <Link className="became-partner" to="/sejamooney">
               <Button category="primary">Seja um parceiro</Button>
             </Link>
           </aside>
@@ -49,7 +47,7 @@ const Parceiros: React.FC = () => {
         </HeaderContent>
         <Partners>
           <div>
-            <h2>Mais de 50 colégios parceiros, alguns deles:</h2>
+            <h2>Mais de 50 colégios parceiros, conheça alguns:</h2>
             <div className="scroll">
               <div className="content">
                 <img src={camataraCollege} alt="College" />
@@ -77,8 +75,8 @@ const Parceiros: React.FC = () => {
                   <section>
                     <h4>+ 50 escolas</h4>
                     <p>
-                      escolas do Brasil já são #Mooners e carregam nossa missão
-                      com eles.
+                      utilizam a metodologia Mooney e disponibilizam Educação
+                      Financeira de qualidade.
                     </p>
                   </section>
                 </div>
@@ -88,7 +86,10 @@ const Parceiros: React.FC = () => {
 
                   <section>
                     <h4>20 mil</h4>
-                    <p>alunos da base das escolas em todo o país.</p>
+                    <p>
+                      beneficiados pelos programas de Alfabetização Financeira
+                      da Mooney.
+                    </p>
                   </section>
                 </div>
               </aside>

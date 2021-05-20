@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="email">
-            <strong>Perguntas? Manda ai!</strong>
+            <strong>Perguntas? Entre em contato!</strong>
             <span>parcerias@mooneyapp.com.br</span>
           </div>
         </aside>
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
           <article>
             <strong>Links úteis</strong>
             <ul>
-              <li>Depoimentos do diretores</li>
+              <li>Depoimentos</li>
               <li>Dúvidas frequentes</li>
               <li>Contato</li>
             </ul>

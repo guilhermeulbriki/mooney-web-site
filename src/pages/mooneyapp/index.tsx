@@ -32,19 +32,26 @@ const Mooneyapp: React.FC = () => {
           <aside>
             <h3>#MooneyApp</h3>
             <h1>
-              Educação Financeira em família, de forma divertida e engajante.
+              Educação Financeira em família, de forma divertida e engajante
             </h1>
             <p>
-              Aplicativo gamificado de educação financeira para além da sala de
-              aula. Funcionalidades práticas e a inclusão da família no processo
-              de aprendizagem.
+              Aplicativo gamificado de Educação Financeira para além do ambiente
+              de aprendizagem. Funcionalidades práticas e a inclusão da família.
             </p>
 
             <span>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://play.google.com/store?hl=pt_BR&gl=US"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={storeBlackGoogle} alt="Store google" />
               </a>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://apps.apple.com/br/app/mooney/id1509285822"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={storeBlackApple} alt="Store apple" />
               </a>
             </span>
@@ -55,7 +62,7 @@ const Mooneyapp: React.FC = () => {
         <BePart>
           <h2>
             Faça parte dessa revolução e{' '}
-            <strong>leve a educação financeira</strong> com você
+            <strong>leve a Educação Financeira</strong> com você
           </h2>
         </BePart>
         <Mockups>
@@ -119,10 +126,10 @@ const Mooneyapp: React.FC = () => {
         <Ready>
           <div>
             <aside>
-              <h2>Pronto para fazer parte dessa nova revolução?</h2>
-              <p>Fale com um de nossos representantes agora mesmo.</p>
+              <h2>Pronto para fazer parte dessa revolução?</h2>
+              <p>Fale com um de nossos especialistas.</p>
 
-              <Link to="/">
+              <Link to="/sejamooney">
                 <Button category="primary">Seja um parceiro</Button>
               </Link>
             </aside>

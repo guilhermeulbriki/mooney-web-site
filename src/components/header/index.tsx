@@ -28,7 +28,9 @@ const Header: React.FC = () => {
             </li>
             <li
               className={
-                pathname === '/mooneyedu' ?? 'mooneyapp' ? 'active' : ''
+                pathname === '/mooneyedu' || pathname === '/mooneyapp'
+                  ? 'active'
+                  : ''
               }
               id="dropdown"
             >
@@ -43,7 +45,7 @@ const Header: React.FC = () => {
                   </Link>
                 </li>
                 <hr />
-                <li className={pathname === 'mooneyapp' ? 'active' : ''}>
+                <li className={pathname === '/mooneyapp' ? 'active' : ''}>
                   <Link to="/mooneyapp">
                     <span>
                       <img src={mobileIcon} alt="MooneyApp" />
@@ -77,7 +79,7 @@ const Header: React.FC = () => {
             <hr className="two" />
           </HamburguerMenu>
 
-          <Link className="became-partner" to="#">
+          <Link className="became-partner" to="/sejamooney">
             <Button category="primary">Seja um parceiro</Button>
           </Link>
         </div>
@@ -89,7 +91,11 @@ const Header: React.FC = () => {
             <Link to="/mooneyedu">Início</Link>
           </li>
           <li
-            className={pathname === '/mooneyedu' ?? 'mooneyapp' ? 'active' : ''}
+            className={
+              pathname === '/mooneyedu' || pathname === '/mooneyapp'
+                ? 'active'
+                : ''
+            }
             id="dropdown"
           >
             <Link to="#">Soluções</Link>
@@ -97,7 +103,7 @@ const Header: React.FC = () => {
               <li className={pathname === '/mooneyedu' ? 'active' : ''}>
                 <Link to="/mooneyedu">#MooneyEdu</Link>
               </li>
-              <li className={pathname === 'mooneyapp' ? 'active' : ''}>
+              <li className={pathname === '/mooneyapp' ? 'active' : ''}>
                 <Link to="/mooneyapp">#MooneyApp</Link>
               </li>
             </ul>
@@ -113,7 +119,11 @@ const Header: React.FC = () => {
           </li>
         </ul>
 
-        <Link onClick={handleShowMenu} className="became-partner" to="#">
+        <Link
+          onClick={handleShowMenu}
+          className="became-partner"
+          to="/sejamooney"
+        >
           <Button category="white">Seja um parceiro</Button>
         </Link>
       </SideMenu>

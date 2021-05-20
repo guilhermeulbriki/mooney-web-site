@@ -781,6 +781,7 @@ export const Ready = styled.div`
     max-width: 1009px;
     margin: 0 64px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
     aside {
@@ -794,14 +795,18 @@ export const Ready = styled.div`
 
       h2 {
         margin-bottom: 8px;
+        max-width: 415px;
       }
 
       p {
         margin-bottom: 32px;
+        max-width: 415px;
       }
     }
 
     @media (max-width: 800px) {
+      justify-content: center;
+
       aside {
         align-items: center;
         text-align: center;

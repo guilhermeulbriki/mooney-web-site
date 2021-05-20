@@ -24,7 +24,7 @@ export const HeaderContent = styled.header`
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
     h1 {
       font-size: 40px;
@@ -46,6 +46,7 @@ export const HeaderContent = styled.header`
       width: 100%;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       margin-top: 24px;
       margin-bottom: 32px;
 
@@ -63,7 +64,7 @@ export const HeaderContent = styled.header`
         border: 1px solid #cfe5f8;
 
         &::placeholder {
-          opacity: 0.5;
+          opacity: 0.7;
         }
       }
 
@@ -82,7 +83,7 @@ export const HeaderContent = styled.header`
         border: 1px solid #cfe5f8;
 
         &::placeholder {
-          opacity: 0.5;
+          opacity: 0.7;
         }
       }
     }

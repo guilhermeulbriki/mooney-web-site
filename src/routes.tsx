@@ -6,6 +6,7 @@ import Home from './pages/home';
 import Mooneyapp from './pages/mooneyapp';
 import Mooneyedu from './pages/mooneyedu';
 import Parceiros from './pages/parceiros';
+import Sejamooney from './pages/sejamooney';
 
 const Routes: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const Routes: React.FC = () => {
         <Route path="/mooneyapp" component={Mooneyapp} exact />
         <Route path="/partners" component={Parceiros} exact />
         <Route path="/contact" component={Contato} exact />
+        <Route path="/sejamooney" component={Sejamooney} exact />
       </Switch>
     </BrowserRouter>
   );

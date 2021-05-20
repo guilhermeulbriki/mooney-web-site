@@ -59,7 +59,7 @@ const Home: React.FC = () => {
               humanizada
             </h1>
 
-            <Link className="became-partner" to="/">
+            <Link className="became-partner" to="/sejamooney">
               <Button category="primary">Seja um parceiro</Button>
             </Link>
 
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
         </HeaderContent>
         <Partners>
           <div>
-            <h2>Mais de 50 colégios parceiros, alguns deles:</h2>
+            <h2>Mais de 50 colégios parceiros, conheça alguns:</h2>
             <div className="scroll">
               <div className="content">
                 <img src={camataraCollege} alt="College" />
@@ -113,8 +113,8 @@ const Home: React.FC = () => {
                 Desenvolvemos uma metodologia de Alfabetização Financeira
                 prática, com atividades dinâmicas, focadas no desenvolvimento
                 humano e nas competências socioemocionais, como
-                autoconhecimento, autocontrole e empatia, consideradas
-                habilidades fundamentais para a educação financeira efetiva.
+                autoconhecimento, autocontrole e empatia. Essas são habilidades
+                consideradas fundamentais para Educação Financeira efetiva.
               </p>
             </header>
             <div className="scroll">
@@ -122,36 +122,42 @@ const Home: React.FC = () => {
                 <StrategyCard>
                   <img src={rotateIcon} alt="Rotate icon" />
                   <h4>Metodologias Ativas</h4>
-                  <p>Sala de aula invertida, onde o jovem é o protoganista</p>
+                  <p>
+                    Sala de aula invertida, storytelling e as mais recentes
+                    tendências pedagógicas.
+                  </p>
                 </StrategyCard>
                 <StrategyCard>
                   <img src={pencilIcon} alt="Pencil icon" />
-                  <h4>Aprendizagem Baseada em Problema (PBL)</h4>
+                  <h4>PBL - Problem Based Learning</h4>
                   <p>
-                    A construção do conhecimento a partir da discussão do
-                    problema
+                    A construção do conhecimento a partir das discussões de
+                    problemas do dia a dia.
                   </p>
                 </StrategyCard>
                 <StrategyCard>
                   <img src={teacherIcon} alt="Teacher icon" />
-                  <h4>Empoderamento do Professor</h4>
+                  <h4>Professor Mediador</h4>
                   <p>
-                    Liberdade e flexibilidade para conduzir aulas engajantes e
-                    interativas em um ambiente dinâmico
+                    Flexibilidade para conduzir aulas engajantes em um ambiente
+                    dinâmico.
                   </p>
                 </StrategyCard>
                 <StrategyCard>
                   <img src={studentIcon} alt="Student icon" />
                   <h4>Formação Integral do aluno</h4>
                   <p>
-                    Educação financeira muito além das competências técnicas da
-                    matemática financeira
+                    Educação Financeira com o objetivo de preparar o aluno para
+                    os desafios da vida.
                   </p>
                 </StrategyCard>
                 <StrategyCard>
                   <img src={ideiaIcon} alt="Ideia icon" />
-                  <h4>Inovação</h4>
-                  <p>Recursos tecnológicos, mão na massa e gamificação</p>
+                  <h4>Inovação e Tecnologia</h4>
+                  <p>
+                    Recursos tecnológicos, atividades práticas, aulas divertidas
+                    e aplicativo gamificado{' '}
+                  </p>
                 </StrategyCard>
                 <img src={lineIcon} alt="Line" />
               </section>
@@ -166,9 +172,9 @@ const Home: React.FC = () => {
               <aside>
                 <h2>O que fazemos?</h2>
                 <p>
-                  Estimulamos e desenvolvemos a criação de hábitos financeiros
-                  saudáveis para uma vida mais equilibrada. Educação Financeira
-                  para jovens nas escolas, famílias e sociedade.
+                  Estimulamos o desenvolvimento de hábitos financeiros saudáveis
+                  para uma vida equilibrada. <br />
+                  Educação Financeira para jovens, famílias e sociedade.
                 </p>
               </aside>
             </WhatWeDo>
@@ -305,10 +311,10 @@ const Home: React.FC = () => {
         <Ready>
           <div>
             <aside>
-              <h2>Pronto para fazer parte dessa nova revolução?</h2>
-              <p>Fale com um de nossos representantes agora mesmo.</p>
+              <h2>Pronto para fazer parte dessa revolução?</h2>
+              <p>Fale com um de nossos especialistas.</p>
 
-              <Link to="/">
+              <Link to="/sejamooney">
                 <Button category="primary">Seja um parceiro</Button>
               </Link>
             </aside>

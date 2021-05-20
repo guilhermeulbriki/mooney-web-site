@@ -111,6 +111,9 @@ export const MoreThanMath = styled.section`
 
       h2 {
         margin-bottom: 16px;
+        text-align: right;
+        margin-left: auto;
+        max-width: 384px;
       }
     }
 
@@ -131,7 +134,13 @@ export const MoreThanMath = styled.section`
         flex-direction: column;
         align-items: center;
 
+        h2 {
+          text-align: center;
+          margin-left: 0;
+        }
+
         p {
+          text-align: center;
           margin-bottom: 80px;
         }
       }
