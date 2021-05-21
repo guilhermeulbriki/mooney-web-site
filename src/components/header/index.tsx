@@ -88,7 +88,7 @@ const Header: React.FC = () => {
       <SideMenu isHidden={!showMenu}>
         <ul>
           <li className={pathname === '/' ? 'active' : ''}>
-            <Link to="/mooneyedu">Início</Link>
+            <Link to="/">Início</Link>
           </li>
           <li
             className={

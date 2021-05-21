@@ -44,9 +44,7 @@ const Contato: React.FC = () => {
               />
             </section>
 
-            <a onClick={handleSendEmail}>
-              <Button category="primary">Enviar e-mail</Button>
-            </a>
+            <button onClick={handleSendEmail}>Enviar e-mail</button>
           </aside>
 
           <img src={contact} alt="Contato" />

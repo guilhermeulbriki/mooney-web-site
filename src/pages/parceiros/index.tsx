@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 
 import Button from '../../components/button';
 import Footer from '../../components/footer';
 import Header from '../../components/header';
+
 import partnersBack from '../../assets/images/partners.png';
 import camataraCollege from '../../assets/images/catamara.png';
 import deltaCollege from '../../assets/images/delta.png';
@@ -14,6 +15,15 @@ import santaCollege from '../../assets/images/santa-ursula.png';
 import map from '../../assets/images/illustrations/map.svg';
 import bookIcon from '../../assets/images/icons/book.svg';
 import backpackIcon from '../../assets/images/icons/backpack.svg';
+import arrowIcon from '../../assets/images/icons/arrow.svg';
+
+import imageOne from '../../assets/images/feedbacks/image-one.png';
+import imageTwo from '../../assets/images/feedbacks/image-two.png';
+import imageThree from '../../assets/images/feedbacks/image-three.png';
+import imageFour from '../../assets/images/feedbacks/image-four.png';
+import imageFive from '../../assets/images/feedbacks/image-five.png';
+import imageSix from '../../assets/images/feedbacks/image-six.png';
+import imageSeven from '../../assets/images/feedbacks/image-seven.png';
 
 import {
   Container,
@@ -23,8 +33,49 @@ import {
   Partners,
   Presence,
 } from './styles';
+import { FeedbacksData } from '../../data/feedbacks';
+
+interface IFeedbacks {
+  id: number;
+  name: string;
+  college: string;
+  message: string;
+  picture: string;
+}
 
 const Parceiros: React.FC = () => {
+  const [feedbacks, setFeedbacks] = useState<IFeedbacks[]>([]);
+  const [avatars, setAvatars] = useState<string[]>([]);
+  const [readMore, setReadMore] = useState(false);
+  const [feedbackReadMore, setFeedbackReadMore] = useState<number | null>(null);
+
+  useEffect(() => {
+    setFeedbacks(FeedbacksData);
+
+    setAvatars([
+      imageOne,
+      imageTwo,
+      imageThree,
+      imageFour,
+      imageFive,
+      imageSix,
+      imageSeven,
+      imageSeven,
+    ]);
+  }, []);
+
+  const handleFeedbackReadMore = useCallback(
+    (feedbackId: number) => {
+      if (feedbackReadMore === feedbackId) {
+        setReadMore(!readMore);
+      } else {
+        setReadMore(true);
+        setFeedbackReadMore(feedbackId);
+      }
+    },
+    [feedbackReadMore, readMore]
+  );
+
   return (
     <>
       <Header />
@@ -114,81 +165,30 @@ const Parceiros: React.FC = () => {
             </section>
 
             <div className="scroll">
-              <aside draggable>
-                <FeedbackCard>
-                  <p>
-                    “A aprendizagem de finanças desde o período escolar permite
-                    estimular e mostrar aos jovens a importância de pensar no
-                    futuro considerando conceitos como: ganhar, economizar,
-                    planejar e investir para atingir seus sonhos.”
-                  </p>
+              <aside>
+                {feedbacks.map((feedback) => (
+                  <FeedbackCard
+                    isReadMore={feedbackReadMore === feedback.id && readMore}
+                    key={feedback.id}
+                  >
+                    <img src={avatars[feedback.id]} alt="Avatar" />
 
-                  <section>
-                    <strong>Luã Marins</strong>
-                    <span>Head Pedagógico na Inspira Rede de Educadores</span>
-                  </section>
-                </FeedbackCard>
-                <FeedbackCard>
-                  <p>
-                    “A Mooney trouxe uma metodologia inovadora, transformando a
-                    Educação Financeira em um estudo mais interativo e próximo
-                    da realidade dos alunos. As aulas, através de propostas
-                    relacionadas ao cotidiano, proporcionam a ... “
-                  </p>
+                    <h4>{feedback.name}</h4>
+                    <h5>{feedback.college}</h5>
 
-                  <section>
-                    <strong>Ana Teresa Alves</strong>
-                    <span>Professora do Colégio Objetivo Guaxupé</span>
-                  </section>
-                </FeedbackCard>
-                <FeedbackCard>
-                  <p>
-                    “Trabalhar Educação Financeira de maneira leve e dinâmica,
-                    como é a proposta da Mooney, está sendo prazeroso tanto para
-                    os alunos como para os professores.”
-                  </p>
+                    <p>{feedback.message}</p>
 
-                  <section>
-                    <strong>Cristina Santos</strong>
-                    <span>Professora do Colégio Poty</span>
-                  </section>
-                </FeedbackCard>
-                <FeedbackCard>
-                  <p>
-                    “Para o Colégio Itamarati está sendo fantástica essa
-                    parceria com a Mooney. Os nossos estudantes estão tendo a
-                    oportunidade de aprender sobre auto gestão financeira
-                    juntamente com um aprofundamento sócio emocional que amplia
-                    o ... ”
-                  </p>
+                    <span
+                      onClick={() => handleFeedbackReadMore(feedback.id)}
+                      className="read-more"
+                    >
+                      <strong className="more">Ler mais</strong>
+                      <strong className="less">Ler menos</strong>
 
-                  <section>
-                    <strong>Susana Prado</strong>
-                    <span>Diretora Pedagógica do Colégio Itamarati</span>
-                  </section>
-                </FeedbackCard>
-                <FeedbackCard>
-                  <p>
-                    “A experiência tem sido muito positiva, e os alunos
-                    interagem com a plataforma de forma divertida.”
-                  </p>
-
-                  <section>
-                    <strong>Thalyta Novaes</strong>
-                    <span>Professora do Colégio Porto União</span>
-                  </section>
-                </FeedbackCard>
-                <FeedbackCard>
-                  <p>
-                    “A interação tem sido geral, todos se envolvem e gostam de
-                    participar dos desafios.”
-                  </p>
-
-                  <section>
-                    <strong>Taciana Aceiro</strong>
-                    <span>Coordenadora do Colégio Itamarati</span>
-                  </section>
-                </FeedbackCard>
+                      <img src={arrowIcon} alt="Arrow" />
+                    </span>
+                  </FeedbackCard>
+                ))}
               </aside>
             </div>
           </div>

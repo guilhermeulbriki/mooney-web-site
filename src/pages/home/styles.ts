@@ -1,4 +1,8 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+
+interface FeedbackCardProps {
+  isReadMore: boolean;
+}
 
 const scrollIconAnimation = keyframes`
   0% {
@@ -75,6 +79,7 @@ export const HeaderContent = styled.header`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin: 0 0;
 
     aside {
       display: flex;
@@ -202,7 +207,7 @@ export const WhyExist = styled.div`
   div {
     width: 100%;
     max-width: 1016px;
-    margin: 0 64px;
+    padding: 0 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -549,6 +554,7 @@ export const MooneyApp = styled.article`
   align-items: center;
   justify-content: space-evenly;
   margin: 150px 0 0 0;
+  overflow-y: hidden;
 
   > img {
     margin-left: -100px;
@@ -604,6 +610,12 @@ export const MooneyApp = styled.article`
     justify-content: flex-start;
     align-items: center;
 
+    > img {
+      margin-left: -100px;
+      max-width: 100%;
+      overflow-y: hidden;
+    }
+
     aside {
       align-items: center;
       margin-bottom: 64px;
@@ -655,28 +667,37 @@ export const Feedbacks = styled.div`
       margin-bottom: 64px;
     }
 
+    .video {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 120px;
+
+      p {
+        margin-top: 24px;
+      }
+
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+
     .scroll {
       width: 100%;
-      overflow-x: auto;
+      overflow-y: auto;
       display: flex;
-      justify-content: flex-start;
+      padding: 0 64px;
 
       aside {
-        min-width: 2282px;
         padding-bottom: 64px;
-        position: relative;
         display: flex;
         justify-content: center;
         flex: nowrap;
-
-        @media (max-width: 680px) {
-          min-width: 1670px;
-        }
       }
 
       ::-webkit-scrollbar {
         height: 8px;
-        padding-top: 4px;
       }
 
       ::-webkit-scrollbar-thumb {
@@ -689,82 +710,164 @@ export const Feedbacks = styled.div`
       }
     }
   }
-`;
-
-export const FeedbackCard = styled.article`
-  height: 357px;
-  width: 319px;
-  background: var(--content-background);
-  border-radius: 24px;
-  box-shadow: 0px 4px 8px #cfe5f8;
-  padding: 32px;
-  text-align: left;
-  flex: none;
-  flex-grow: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
   @media (max-width: 680px) {
-    padding: 24px;
-    height: 346px;
-    width: 217px;
+    div {
+      .scroll {
+        padding: 0 24px;
+      }
+    }
+  }
+`;
+
+export const FeedbackCard = styled.article<FeedbackCardProps>`
+  width: 382px;
+  height: 528px;
+  max-height: 528px;
+  padding: 32px 24px;
+  background: var(--content-background);
+  border: 2px solid #e1e5ec;
+  box-shadow: 0px 4px 8px #cfe5f8;
+  border-radius: 24px;
+
+  ${(props) =>
+    props.isReadMore &&
+    css`
+      height: auto;
+      max-height: 1000px;
+    `}
+
+  transition: max-height 0.4s;
+
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &:last-child::after {
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 100%;
+    right: -65px;
+  }
+
+  & + article {
+    margin-left: 48px;
+  }
+
+  > img {
+    margin-bottom: 24px;
+  }
+
+  h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  h5 {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 32px;
+  }
+
+  p {
+    color: var(--text-gray);
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    ${(props) =>
+      props.isReadMore &&
+      css`
+        display: block;
+        padding-bottom: 40px;
+      `}
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+
+    strong {
+      margin-right: 16px;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      font-family: 'Inter', sans-serif;
+
+      animation: transform 0.4s;
+
+      &.more {
+        ${(props) =>
+          props.isReadMore &&
+          css`
+            display: none;
+          `}
+      }
+
+      &.less {
+        display: none;
+
+        ${(props) =>
+          props.isReadMore &&
+          css`
+            display: block;
+          `}
+      }
+    }
+
+    img {
+      transform: rotate(90deg);
+      transition: transform 0.4s;
+
+      ${(props) =>
+        props.isReadMore &&
+        css`
+          transform: rotate(270deg);
+        `}
+    }
+  }
+
+  @media (max-width: 680px) {
+    width: 260px;
+    padding: 24px 16px;
 
     & + article {
       margin-left: 16px;
     }
 
     p {
-      font-size: 14px;
-      line-height: 19.6px;
-      text-align: left;
-      min-width: 169px;
-      max-height: 214px;
-      display: -webkit-box;
-      -webkit-line-clamp: 9;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
     }
 
-    section {
-      strong {
-        margin-bottom: 4px;
-      }
-
-      span {
-        font-size: 12px;
-        line-height: 16.8px;
-      }
-    }
-  }
-
-  & + article {
-    margin-left: 64px;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 22.4px;
-  }
-
-  section {
-    display: flex;
-    flex-direction: column;
-
-    strong {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 8px;
-      line-height: 20.8px;
-      color: var(--text-black);
-    }
-
-    span {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 19.6px;
-      color: var(--text-gray);
+    &:last-child::after {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 100%;
+      right: -25px;
     }
   }
 `;

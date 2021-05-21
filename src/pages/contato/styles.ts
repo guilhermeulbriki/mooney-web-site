@@ -31,7 +31,6 @@ export const HeaderContent = styled.header`
       font-weight: 800;
       width: 520px;
       line-height: 60px;
-      margin-bottom: 16px;
 
       @media (max-width: 680px) {
         font-size: 20px;
@@ -52,19 +51,24 @@ export const HeaderContent = styled.header`
 
       input {
         width: 100%;
+        margin-bottom: 24px;
         max-width: 350px;
         min-width: 272px;
-        height: 48px;
-        margin-bottom: 16px;
-        padding: 0 16px;
-
-        background: #f8f9fb;
-        box-shadow: 0px 4px 8px #cfe5f8;
+        box-shadow: 0px 4px 16px rgba(104, 114, 123, 0.25);
         border-radius: 24px;
-        border: 1px solid #cfe5f8;
+        background: var(--content-background);
+        border: 0;
+        height: 48px;
+        padding: 0 16px;
+        outline: 0;
 
         &::placeholder {
           opacity: 0.7;
+          color: var(--text-gray);
+        }
+
+        &:not(:placeholder-shown) {
+          border: 1px solid var(--primary);
         }
       }
 
@@ -74,17 +78,54 @@ export const HeaderContent = styled.header`
         min-width: 272px;
         height: 160px;
         resize: none;
-        margin-bottom: 16px;
         padding: 16px;
+        outline: 0;
 
-        background: #f8f9fb;
-        box-shadow: 0px 4px 8px #cfe5f8;
+        box-shadow: 0px 4px 16px rgba(104, 114, 123, 0.25);
         border-radius: 24px;
-        border: 1px solid #cfe5f8;
+        background: var(--content-background);
+        border: 0;
 
         &::placeholder {
           opacity: 0.7;
+          color: var(--text-gray);
         }
+
+        &:not(:placeholder-shown) {
+          border: 1px solid var(--primary);
+        }
+      }
+    }
+
+    button {
+      cursor: pointer;
+      width: 100%;
+      max-width: 350px;
+      min-width: 272px;
+      margin-top: 0px;
+      height: 40px;
+      border-radius: 20px;
+      border: 0;
+      background: var(--gradient-button);
+      color: var(--text-white);
+
+      font-weight: 600;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: box-shadow 0.2s, transform 0.4s;
+      outline: none;
+
+      &:hover {
+        box-shadow: 0px 0px 8px rgba(65, 81, 215, 0.5);
+      }
+
+      &:active {
+        transform: scale(0.9);
+        border: 0;
+        background: var(--gradient-button);
+        color: var(--text-silver);
       }
     }
   }
