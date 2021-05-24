@@ -54,13 +54,14 @@ export const HeaderContent = styled.header`
         margin-bottom: 24px;
         max-width: 350px;
         min-width: 272px;
-        box-shadow: 0px 4px 16px rgba(104, 114, 123, 0.25);
+        box-shadow: 0px 4px 16px rgba(104, 114, 123, 0.25) !important;
         border-radius: 24px;
         background: var(--content-background);
         border: 0;
         height: 48px;
         padding: 0 16px;
         outline: 0;
+        background-clip: padding-box;
 
         &::placeholder {
           opacity: 0.7;

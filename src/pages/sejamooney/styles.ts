@@ -86,13 +86,14 @@ export const HeaderComponent = styled.section`
         width: 100%;
         max-width: 384px;
         min-width: 240px;
-        box-shadow: 0px 4px 16px rgba(104, 114, 123, 0.25);
+        box-shadow: 0px 4px 16px rgba(104, 114, 123, 0.25) !important;
         border-radius: 24px;
         background: var(--content-background);
         border: 0;
         height: 48px;
         padding: 0 16px;
         outline: 0;
+        background-clip: padding-box;
 
         & + input {
           margin-top: 24px;
