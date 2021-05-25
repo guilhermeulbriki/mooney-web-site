@@ -4,6 +4,7 @@ import Button from '../../components/button';
 import Footer from '../../components/footer';
 import Header from '../../components/header';
 import contact from '../../assets/images/contact.png';
+import emailjs from 'emailjs-com';
 
 import { Container, HeaderContent, Questions } from './styles';
 
@@ -12,8 +13,17 @@ const Contato: React.FC = () => {
   const [email, setEmail] = useState('');
   const [question, setQuestion] = useState('');
 
-  const handleSendEmail = useCallback(() => {
+  const handleSendEmail = useCallback((e) => {
     console.log(`Email enviado: ${name}, ${email}, ${question}`);
+
+    var templateParams = {
+      name: name,
+      email: email,
+      question: question
+  };
+  
+    e.preventDefault(); // Prevents default refresh by the browser
+    emailjs.send(`service_lpg7yn4`,`template_7wz31lq`, templateParams ,`user_RJZjlwjWFGihK1N5bgzPg`);
   }, [email, name, question]);
 
   return (
