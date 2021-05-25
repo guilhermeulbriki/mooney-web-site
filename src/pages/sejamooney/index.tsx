@@ -7,6 +7,8 @@ import arrow from '../../assets/images/illustrations/arrow.svg';
 
 import { Container, HeaderComponent, BePart } from './styles';
 
+import emailjs from 'emailjs-com';
+
 const Sejamooney: React.FC = () => {
   const [schoolName, setSchoolName] = useState('');
   const [name, setName] = useState('');
@@ -14,10 +16,21 @@ const Sejamooney: React.FC = () => {
   const [whatsapp, setWhatsapp] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSendContact = useCallback(() => {
+  const handleSendContact = useCallback((e) => {
     console.log(
       `Contato enviado, ${schoolName}, ${name}, ${role}, ${whatsapp}, ${message}`
     );
+
+    var templateParams = {
+      schoolName: schoolName,
+      name: name,
+      role: role,
+      whatsapp: whatsapp,
+      message: message
+  };
+  
+    e.preventDefault(); // Prevents default refresh by the browser
+    emailjs.send(`service_lpg7yn4`,`template_amtghxd`, templateParams ,`user_RJZjlwjWFGihK1N5bgzPg`);
   }, [message, name, role, schoolName, whatsapp]);
 
   return (
