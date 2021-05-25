@@ -283,13 +283,10 @@ const Home: React.FC = () => {
             <section className="video">
               <ReactPlayer
                 controls={true}
-                url="https://www.youtube.com/watch?v=Qn2tvtCkI2w&t=375s"
+                url="https://www.youtube.com/watch?v=NH3tSiuGYKw"
               />
 
-              <p>
-                Depoimento de José Pereira da Cruz, diretor da escola Afonso
-                Pena
-              </p>
+              <p>Depoimento de Samuel, colégio Delta</p>
             </section>
 
             <div className="scroll">

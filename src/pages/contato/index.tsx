@@ -70,60 +70,32 @@ const Contato: React.FC = () => {
             <div className="questions">
               <section>
                 <article>
-                  <h4>O meu aluno paga direto para vocês?</h4>
-                  <p>
-                    Não, ao fechar-se um pacote como escola parceira, nenhuma
-                    cobrança adicional será repassada aos alunos.
-                  </p>
-                </article>
-
-                <article>
-                  <h4>Quantas aulas têm?</h4>
-                  <p>
-                    A Mooney se adequa às necessidades de cada colégio, então o
-                    colégio tem a flexibilidade de escolher no início do
-                    processo se as aulas vão ser semanais ou quinzenais
-                  </p>
-                </article>
-
-                <article>
-                  <h4>Vocês trabalham com apostilas?</h4>
-                  <p>
-                    Não, os professores recebem acesso ao material digital e os
-                    alunos podem acessar o conteúdo das aulas pelo aplicativo da
-                    Mooney.
-                  </p>
-                </article>
-              </section>
-
-              <section>
-                <article>
-                  <h4>Vocês já estão alinhados ao novo Ensino Médio?</h4>
-                  <p>
-                    Sim! A Mooney seguiu as diretrizes da BNCC para desenvolver
-                    as aulas e já tem um projeto desenvolvido especialmente para
-                    o novo Ensino Médio, o Mooney Lab
-                  </p>
-                </article>
-
-                <article>
                   <h4>Qual é o diferencial da Mooney?</h4>
                   <p>
                     Além da metodologia completa e humanizada de educação
-                    financeira, o aplicativo da Mooney ajuda o aluno no
-                    desenvolvimento de hábitos financeiros saudáveis e
-                    desenvolvimento de relações entre os alunos e familiares e
-                    com a sociedade.
+                    financeira, desenvolvemos o aplicativo Mooney, que auxilia o
+                    jovem no desenvolvimento de hábitos financeiros saudáveis,
+                    incluindo seus familiares e a sociedade.
                   </p>
                 </article>
 
                 <article>
-                  <h4>É um curso extracurricular?</h4>
+                  <h4>São professores da Mooney que aplicam as aulas?</h4>
                   <p>
-                    Não. A Mooney é preparada para ser um curso intracurricular,
-                    que pode ser utilizada na grade de qualquer disciplina caso
-                    a escola não tenha uma disciplina específica, garantindo que
-                    todos os alunos do colégio tenham acesso às aulas.
+                    Não. A Mooney capacita os professores dos colégios parceiros
+                    para aplicar as aulas. Todas as aulas e conceitos são
+                    descritos de forma simples e completa para que qualquer
+                    professor, independente da área de formação e atuação,
+                    consiga aplicar a metodologia da Mooney.
+                  </p>
+                </article>
+
+                <article>
+                  <h4>A Mooney trabalha com apostilas?</h4>
+                  <p>
+                    Não. Os professores recebem acesso ao material digital e os
+                    alunos podem acessar o conteúdo das aulas pelo aplicativo da
+                    Mooney e pela plataforma Web. Tudo é muito interativo!
                   </p>
                 </article>
               </section>
@@ -132,7 +104,7 @@ const Contato: React.FC = () => {
                 <article>
                   <h4>O aplicativo faz parte do pacote?</h4>
                   <p>
-                    Sim! Todas as aulas contam com o suporte de uma trilha de
+                    Sim. Todas as aulas contam com o suporte de uma trilha de
                     conhecimento gamificada e algumas aulas usam o aplicativo
                     como recurso pedagógico durante as atividades, para caso a
                     escola tenha disponibilidade de acesso aos alunos dentro do
@@ -142,8 +114,8 @@ const Contato: React.FC = () => {
 
                 <article>
                   <h4>
-                    Eu já tenho educação financeira na minha escola, porque eu
-                    precisaria de mais?{' '}
+                    A apostila e/ou livro utilizado no meu colégio contempla
+                    educação financeira. Posso ser parceiro Mooney mesmo assim?
                   </h4>
                   <p>
                     A Mooney oferece uma abordagem de Educação Financeira
@@ -152,18 +124,50 @@ const Contato: React.FC = () => {
                     Todas as nossas aulas são preparadas e validadas pela nossa
                     equipe pedagógica, para garantir um material sempre
                     atualizado e alinhado com as novidades do mercado
-                    financeiro.
+                    financeiro. A metodologia Mooney é complementar aos
+                    conteúdos contemplados em apostilas e livros didáticos.
                   </p>
                 </article>
 
                 <article>
-                  <h4>São professores de vocês que aplicam a aula?</h4>
+                  <h4>
+                    A metodologia Mooney está alinhada ao novo Ensino Médio?
+                  </h4>
                   <p>
-                    Não, a Mooney capacita os professores dos colégios parceiros
-                    para aplicar as aulas. Todas as aulas e conceitos são
-                    escritos de forma simples e completa para que qualquer
-                    professor, independente da área que dá aula, consiga aplicar
-                    as aulas da Mooney.
+                    Sim! A Mooney seguiu as diretrizes da BNCC para desenvolver
+                    as aulas e já tem um projeto desenvolvido especialmente para
+                    o novo Ensino Médio, o Mooney Lab.
+                  </p>
+                </article>
+              </section>
+
+              <section>
+                <article>
+                  <h4>Quantas aulas têm?</h4>
+                  <p>
+                    A Mooney se adequa às necessidades de cada colégio, então o
+                    colégio tem a flexibilidade de escolher no início do
+                    processo se as aulas serão semanais ou quinzenais
+                  </p>
+                </article>
+
+                <article>
+                  <h4>Existe alguma capacitação para os professores?</h4>
+                  <p>
+                    Sim, existe um programa específico para capacitação
+                    continuada dos professores dos colégios parceiros.
+                  </p>
+                </article>
+
+                <article>
+                  <h4>
+                    Durante o ano a Mooney faz eventos para responsáveis de
+                    alunos e funcionários dos colégios parceiros sobre o tema de
+                    educação financeira?
+                  </h4>
+                  <p>
+                    Sim, a Mooney promove eventos periódicos sobre educação
+                    financeira com diferentes temas e abordagens.
                   </p>
                 </article>
               </section>
