@@ -70,13 +70,10 @@ const Mooneyapp: React.FC = () => {
             <img src={mockupone} alt="Mokcup" />
 
             <aside>
-              <h2>
-                Pets Virtuais (Mooners) que engaja o aluno em sua jornada de
-                autonomia financeira.
-              </h2>
+              <h2>Aplicativo gamificado. Jovens mais engajados!</h2>
               <p>
-                Hábitos financeiros são constituídos ao mesmo tempo que aluno
-                faz uma coleção de Mooners e pode trocar com amigos.
+                Hábitos financeiros saudáveis são construídos ao mesmo tempo que
+                jovem aprende e se diverte.
               </p>
             </aside>
           </Mockup>
@@ -84,13 +81,10 @@ const Mooneyapp: React.FC = () => {
             <img src={mockuptwo} alt="Mokcup" />
 
             <aside>
-              <h2>
-                Cofrinhos virtuais para poupar para metas de curto, médio e
-                longo prazo.
-              </h2>
+              <h2>Cofrinhos virtuais!</h2>
               <p>
-                Hábitos financeiros são constituídos ao mesmo tempo que aluno
-                faz uma coleção de Mooners e pode trocar com amigos.
+                Crie metas e objetivos. Aproveite a jornada, ganhe recompensas e
+                se divirta muito.
               </p>
             </aside>
           </Mockup>
@@ -98,13 +92,11 @@ const Mooneyapp: React.FC = () => {
             <img src={mockupthree} alt="Mokcup" />
 
             <aside>
-              <h2>
-                Jornada Mooney: trilha de conteúdo complementar aos tópicos
-                trabalhados em sala de aula
-              </h2>
+              <h2>Jornada Mooney. Conheça a trilha do conhecimento!</h2>
               <p>
-                Hábitos financeiros são constituídos ao mesmo tempo que aluno
-                faz uma coleção de Mooners e pode trocar com amigos.
+                Área exclusiva para alunos dos colégios parceiros. Conteúdo
+                complementar aos temas tratados em sala de aula e muita
+                interatividade.
               </p>
             </aside>
           </Mockup>
@@ -112,13 +104,11 @@ const Mooneyapp: React.FC = () => {
             <img src={mockupfour} alt="Mokcup" />
 
             <aside>
-              <h2>
-                Tarefas pedagógicas em famílias que ensinam o papel da
-                colaboração e do trabalho em ambiente coletivo
-              </h2>
+              <h2>Tarefas pedagógicas!</h2>
               <p>
-                trazendo também a família nessa jornada de desenvolvimento da
-                competência financeira do jovem
+                Vamos tratar do assunto em família? Crie tarefas remuneradas ou
+                não. Uma ótima ferramenta para discutir o papel da colaboração
+                do jovem em um ambiente coletivo.
               </p>
             </aside>
           </Mockup>
