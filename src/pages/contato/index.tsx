@@ -13,18 +13,26 @@ const Contato: React.FC = () => {
   const [email, setEmail] = useState('');
   const [question, setQuestion] = useState('');
 
-  const handleSendEmail = useCallback((e) => {
-    console.log(`Email enviado: ${name}, ${email}, ${question}`);
+  const handleSendEmail = useCallback(
+    (e) => {
+      console.log(`Email enviado: ${name}, ${email}, ${question}`);
 
-    var templateParams = {
-      name: name,
-      email: email,
-      question: question
-  };
-  
-    e.preventDefault(); // Prevents default refresh by the browser
-    emailjs.send(`service_lpg7yn4`,`template_7wz31lq`, templateParams ,`user_RJZjlwjWFGihK1N5bgzPg`);
-  }, [email, name, question]);
+      var templateParams = {
+        name: name,
+        email: email,
+        question: question,
+      };
+
+      e.preventDefault(); // Prevents default refresh by the browser
+      emailjs.send(
+        `service_lpg7yn4`,
+        `template_7wz31lq`,
+        templateParams,
+        `user_RJZjlwjWFGihK1N5bgzPg`
+      );
+    },
+    [email, name, question]
+  );
 
   return (
     <>
@@ -80,38 +88,6 @@ const Contato: React.FC = () => {
             <div className="questions">
               <section>
                 <article>
-                  <h4>Qual é o diferencial da Mooney?</h4>
-                  <p>
-                    Além da metodologia completa e humanizada de educação
-                    financeira, desenvolvemos o aplicativo Mooney, que auxilia o
-                    jovem no desenvolvimento de hábitos financeiros saudáveis,
-                    incluindo seus familiares e a sociedade.
-                  </p>
-                </article>
-
-                <article>
-                  <h4>São professores da Mooney que aplicam as aulas?</h4>
-                  <p>
-                    Não. A Mooney capacita os professores dos colégios parceiros
-                    para aplicar as aulas. Todas as aulas e conceitos são
-                    descritos de forma simples e completa para que qualquer
-                    professor, independente da área de formação e atuação,
-                    consiga aplicar a metodologia da Mooney.
-                  </p>
-                </article>
-
-                <article>
-                  <h4>A Mooney trabalha com apostilas?</h4>
-                  <p>
-                    Não. Os professores recebem acesso ao material digital e os
-                    alunos podem acessar o conteúdo das aulas pelo aplicativo da
-                    Mooney e pela plataforma Web. Tudo é muito interativo!
-                  </p>
-                </article>
-              </section>
-
-              <section>
-                <article>
                   <h4>O aplicativo faz parte do pacote?</h4>
                   <p>
                     Sim. Todas as aulas contam com o suporte de uma trilha de
@@ -123,19 +99,11 @@ const Contato: React.FC = () => {
                 </article>
 
                 <article>
-                  <h4>
-                    A apostila e/ou livro utilizado no meu colégio contempla
-                    educação financeira. Posso ser parceiro Mooney mesmo assim?
-                  </h4>
+                  <h4>A Mooney trabalha com apostilas?</h4>
                   <p>
-                    A Mooney oferece uma abordagem de Educação Financeira
-                    prática e baseada no desenvolvimento de habilidades
-                    socioemocionais, complementando o projeto de vida do aluno.
-                    Todas as nossas aulas são preparadas e validadas pela nossa
-                    equipe pedagógica, para garantir um material sempre
-                    atualizado e alinhado com as novidades do mercado
-                    financeiro. A metodologia Mooney é complementar aos
-                    conteúdos contemplados em apostilas e livros didáticos.
+                    Não. Os professores recebem acesso ao material digital e os
+                    alunos podem acessar o conteúdo das aulas pelo aplicativo da
+                    Mooney e pela plataforma Web. Tudo é muito interativo!
                   </p>
                 </article>
 
@@ -178,6 +146,46 @@ const Contato: React.FC = () => {
                   <p>
                     Sim, a Mooney promove eventos periódicos sobre educação
                     financeira com diferentes temas e abordagens.
+                  </p>
+                </article>
+              </section>
+
+              <section>
+                <article>
+                  <h4>Qual é o diferencial da Mooney?</h4>
+                  <p>
+                    Além da metodologia completa e humanizada de educação
+                    financeira, desenvolvemos o aplicativo Mooney, que auxilia o
+                    jovem no desenvolvimento de hábitos financeiros saudáveis,
+                    incluindo seus familiares e a sociedade.
+                  </p>
+                </article>
+
+                <article>
+                  <h4>São professores da Mooney que aplicam as aulas?</h4>
+                  <p>
+                    Não. A Mooney capacita os professores dos colégios parceiros
+                    para aplicar as aulas. Todas as aulas e conceitos são
+                    descritos de forma simples e completa para que qualquer
+                    professor, independente da área de formação e atuação,
+                    consiga aplicar a metodologia da Mooney.
+                  </p>
+                </article>
+
+                <article>
+                  <h4>
+                    A apostila e/ou livro utilizado no meu colégio contempla
+                    educação financeira. Posso ser parceiro Mooney mesmo assim?
+                  </h4>
+                  <p>
+                    A Mooney oferece uma abordagem de Educação Financeira
+                    prática e baseada no desenvolvimento de habilidades
+                    socioemocionais, complementando o projeto de vida do aluno.
+                    Todas as nossas aulas são preparadas e validadas pela nossa
+                    equipe pedagógica, para garantir um material sempre
+                    atualizado e alinhado com as novidades do mercado
+                    financeiro. A metodologia Mooney é complementar aos
+                    conteúdos contemplados em apostilas e livros didáticos.
                   </p>
                 </article>
               </section>
