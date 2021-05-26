@@ -8,6 +8,7 @@ import applestore from '../../assets/images/social/applestore.svg';
 import googleplay from '../../assets/images/social/googleplay.svg';
 
 import { Container } from './styles';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -29,28 +30,53 @@ const Footer: React.FC = () => {
           <article>
             <strong>Mooney</strong>
             <ul>
-              <li>Home</li>
-              <li>Soluções</li>
-              <li>Parceiros</li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/mooneyedu">Mooney Edu</Link>
+              </li>
+              <li>
+                <Link to="/mooneyapp">Mooney App</Link>
+              </li>
+              <li>
+                <Link to="/partners">Parceiros</Link>
+              </li>
               <li>Blog</li>
-              <li>Contato</li>
+              <li>
+                <Link to="/contact">Contato</Link>
+              </li>
             </ul>
           </article>
           <article>
             <strong>Hashtags</strong>
             <ul>
-              <li>#MooneyEdu</li>
-              <li>#MooneyApp</li>
-              <li>#SejaMooney</li>
-              <li>#Mooners</li>
+              <li>
+                <Link to="/mooneyedu">#MooneyEdu</Link>
+              </li>
+              <li>
+                <Link to="/mooneyapp">#MooneyApp</Link>
+              </li>
+              <li>
+                <Link to="/sejamooney">#SejaMooney</Link>
+              </li>
+              <li>
+                <Link to="/partners">#Mooners</Link>
+              </li>
             </ul>
           </article>
           <article>
             <strong>Links úteis</strong>
             <ul>
-              <li>Depoimentos</li>
-              <li>Dúvidas frequentes</li>
-              <li>Contato</li>
+              <li>
+                <Link to="/partners">Depoimentos</Link>
+              </li>
+              <li>
+                <Link to="/contact">Dúvidas frequentes</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contato</Link>
+              </li>
             </ul>
           </article>
           <article className="social">
@@ -60,18 +86,42 @@ const Footer: React.FC = () => {
                 <img src={whatsapp} alt="Whatsapp" />
               </li>
               <li>
-                <img src={instagram} alt="Instagram" />
+                <a
+                  href="https://www.instagram.com/mooneyedu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={instagram} alt="Instagram" />
+                </a>
               </li>
               <li>
-                <img src={linkedin} alt="Linkedin" />
+                <a
+                  href="https://www.linkedin.com/company/mooneyedu/mycompany/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={linkedin} alt="Linkedin" />
+                </a>
               </li>
             </ul>
           </article>
         </aside>
 
         <span className="stores">
-          <img src={applestore} alt="applestore" />
-          <img src={googleplay} alt="googleplay" />
+          <a
+            href="https://play.google.com/store/apps/details?id=br.com.mooney.missions&hl=pt"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={googleplay} alt="googleplay" />
+          </a>
+          <a
+            href="https://apps.apple.com/br/app/mooney/id1509285822"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={applestore} alt="applestore" />
+          </a>
         </span>
       </div>
     </Container>
