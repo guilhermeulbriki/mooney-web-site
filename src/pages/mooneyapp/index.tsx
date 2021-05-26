@@ -41,7 +41,7 @@ const Mooneyapp: React.FC = () => {
 
             <span>
               <a
-                href="https://play.google.com/store?hl=pt_BR&gl=US"
+                href="https://play.google.com/store/apps/details?id=br.com.mooney.missions&hl=pt"
                 target="_blank"
                 rel="noopener noreferrer"
               >
