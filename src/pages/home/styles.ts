@@ -579,6 +579,8 @@ export const MooneyApp = styled.article`
 
     span {
       display: flex;
+      position: relative;
+      z-index: 1;
 
       a {
         background: var(--text-white);

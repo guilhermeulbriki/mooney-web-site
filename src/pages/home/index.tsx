@@ -259,14 +259,16 @@ const Home: React.FC = () => {
 
                 <span>
                   <a
-                    target="blank"
-                    href="https://play.google.com/store?hl=pt_BR&gl=US"
+                    href="https://play.google.com/store/apps/details?id=br.com.mooney.missions&hl=pt"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img src={googlePlay} alt="Google play" />
                   </a>
                   <a
-                    target="blank"
                     href="https://apps.apple.com/br/app/mooney/id1509285822"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img src={appStore} alt="App store" />
                   </a>
