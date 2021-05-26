@@ -147,7 +147,7 @@ const Home: React.FC = () => {
               <h2>Por que a Mooney existe?</h2>
               <p>
                 Nossa missão é melhorar a qualidade de vida das famílias a
-                partir do ensino de educação financeira de maneira prática,
+                partir do ensino de Educação Financeira de maneira prática,
                 simples e humanizada.
               </p>
 
@@ -252,7 +252,7 @@ const Home: React.FC = () => {
               <aside>
                 <h2>#MooneyApp</h2>
                 <p>
-                  Aplicativo gamificado de educação financeira para além da sala
+                  Aplicativo gamificado de Educação Financeira para além da sala
                   de aula. Funcionalidades práticas e a inclusão da família no
                   processo de aprendizagem.
                 </p>

@@ -146,7 +146,7 @@ const Contato: React.FC = () => {
                   <h4>
                     Durante o ano a Mooney faz eventos para responsáveis de
                     alunos e funcionários dos colégios parceiros sobre o tema de
-                    educação financeira?
+                    Educação Financeira?
                   </h4>
                   <p>
                     Sim, a Mooney promove eventos periódicos sobre educação
@@ -180,7 +180,7 @@ const Contato: React.FC = () => {
                 <article>
                   <h4>
                     A apostila e/ou livro utilizado no meu colégio contempla
-                    educação financeira. Posso ser parceiro Mooney mesmo assim?
+                    Educação Financeira. Posso ser parceiro Mooney mesmo assim?
                   </h4>
                   <p>
                     A Mooney oferece uma abordagem de Educação Financeira

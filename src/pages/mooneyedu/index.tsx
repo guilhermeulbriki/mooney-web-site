@@ -61,12 +61,12 @@ const Mooneyedu: React.FC = () => {
             <h2>
               Nossa metodologia e planos de aulas são ideais para colégios que
               querem{' '}
-              <strong>um projeto de educação financeira de sucesso!</strong>
+              <strong>um projeto de Educação Financeira de sucesso!</strong>
             </h2>
 
             <section>
               <article>
-                <h4>Seu colégio já trabalha com educação financeira?</h4>
+                <h4>Seu colégio já trabalha com Educação Financeira?</h4>
                 <p>
                   A Mooney Edu proporciona de forma complementar uma excelente
                   experiência de formação integral do aluno, para colégios que

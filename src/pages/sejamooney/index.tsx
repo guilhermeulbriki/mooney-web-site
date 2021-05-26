@@ -112,10 +112,10 @@ const Sejamooney: React.FC = () => {
         <BePart>
           <h2>
             Faça parte dessa revolução e{' '}
-            <strong>leve a educação financeira</strong> com você
+            <strong>leve a Educação Financeira</strong> com você
           </h2>
           <p>
-            Vamos levar educação financeira de qualidade para os seus alunos?
+            Vamos levar Educação Financeira de qualidade para os seus alunos?
             Junte-se a nós e seja um colégio parceiro!
           </p>
 
