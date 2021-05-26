@@ -146,7 +146,6 @@ export const Partners = styled.div`
         img {
           filter: grayscale(1);
           transition: filter 0.4s;
-          cursor: pointer;
 
           & + img {
             margin-left: 72px;
