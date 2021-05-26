@@ -20,7 +20,7 @@ export const FeedbacksData = [
     name: 'Mayara Robles de Sá',
     college: 'Escola Poty',
     message:
-      '“O projeto da mooney nos encantou desde início e não foi diferente depois de fecharmos a parceria. Eles tem um suporte incrível e todas as ações buscam enriquecer a educação como um todo. Realmente uma parceria de sucesso!”',
+      '“O projeto da mooney nos encantou desde o início e não foi diferente depois de fecharmos a parceria. Eles têm um suporte incrível e todas as ações buscam enriquecer a educação como um todo. Realmente uma parceria de sucesso!”',
     picture: '../assets/imagens/feedbacks/image-three.png',
   },
   {
