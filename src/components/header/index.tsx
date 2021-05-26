@@ -20,7 +20,9 @@ const Header: React.FC = () => {
     <>
       <HeaderComponent>
         <div>
-          <img src={logo} alt="Mooney logo" />
+          <Link to="/">
+            <img src={logo} alt="Mooney logo" />
+          </Link>
 
           <ul>
             <li className={pathname === '/' ? 'active' : ''}>
