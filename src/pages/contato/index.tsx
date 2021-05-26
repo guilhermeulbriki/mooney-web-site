@@ -1,5 +1,4 @@
 import React, { useCallback, useState } from 'react';
-import Button from '../../components/button';
 
 import Footer from '../../components/footer';
 import Header from '../../components/header';
@@ -30,6 +29,12 @@ const Contato: React.FC = () => {
         templateParams,
         `user_RJZjlwjWFGihK1N5bgzPg`
       );
+
+      setName('');
+      setEmail('');
+      setQuestion('');
+
+      alert('E-mail enviado com sucesso!');
     },
     [email, name, question]
   );

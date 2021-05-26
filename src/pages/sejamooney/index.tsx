@@ -16,22 +16,38 @@ const Sejamooney: React.FC = () => {
   const [whatsapp, setWhatsapp] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSendContact = useCallback((e) => {
-    console.log(
-      `Contato enviado, ${schoolName}, ${name}, ${role}, ${whatsapp}, ${message}`
-    );
+  const handleSendContact = useCallback(
+    (e) => {
+      console.log(
+        `Contato enviado, ${schoolName}, ${name}, ${role}, ${whatsapp}, ${message}`
+      );
 
-    var templateParams = {
-      schoolName: schoolName,
-      name: name,
-      role: role,
-      whatsapp: whatsapp,
-      message: message
-  };
-  
-    e.preventDefault(); // Prevents default refresh by the browser
-    emailjs.send(`service_lpg7yn4`,`template_amtghxd`, templateParams ,`user_RJZjlwjWFGihK1N5bgzPg`);
-  }, [message, name, role, schoolName, whatsapp]);
+      var templateParams = {
+        schoolName: schoolName,
+        name: name,
+        role: role,
+        whatsapp: whatsapp,
+        message: message,
+      };
+
+      e.preventDefault(); // Prevents default refresh by the browser
+      emailjs.send(
+        `service_lpg7yn4`,
+        `template_amtghxd`,
+        templateParams,
+        `user_RJZjlwjWFGihK1N5bgzPg`
+      );
+
+      alert('E-mail enviado com sucesso!');
+
+      setSchoolName('');
+      setName('');
+      setRole('');
+      setWhatsapp('');
+      setMessage('');
+    },
+    [message, name, role, schoolName, whatsapp]
+  );
 
   return (
     <>
