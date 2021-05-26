@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import ScrollContainer from 'react-indiana-drag-scroll';
 import { Link } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 
@@ -162,7 +163,7 @@ const Parceiros: React.FC = () => {
               <p>Depoimento de Samuel Viana do colégio Delta</p>
             </section>
 
-            <div className="scroll">
+            <ScrollContainer nativeMobileScroll className="scroll-container">
               <aside>
                 {feedbacks.map((feedback) => (
                   <FeedbackCard
@@ -188,7 +189,7 @@ const Parceiros: React.FC = () => {
                   </FeedbackCard>
                 ))}
               </aside>
-            </div>
+            </ScrollContainer>
           </div>
         </Feedbacks>
       </Container>

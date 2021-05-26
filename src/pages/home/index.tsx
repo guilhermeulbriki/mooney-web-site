@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { ReactSVG } from 'react-svg';
+import ScrollContainer from 'react-indiana-drag-scroll';
 import { Link } from 'react-router-dom';
 
 import Button from '../../components/button';
@@ -297,7 +298,7 @@ const Home: React.FC = () => {
               <p>Depoimento de Samuel Viana do colégio Delta</p>
             </section>
 
-            <div className="scroll">
+            <ScrollContainer nativeMobileScroll className="scroll-container">
               <aside>
                 {feedbacks.map((feedback) => (
                   <FeedbackCard
@@ -323,7 +324,7 @@ const Home: React.FC = () => {
                   </FeedbackCard>
                 ))}
               </aside>
-            </div>
+            </ScrollContainer>
           </div>
         </Feedbacks>
         <Ready>

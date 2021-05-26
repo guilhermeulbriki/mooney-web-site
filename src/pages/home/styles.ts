@@ -685,7 +685,7 @@ export const Feedbacks = styled.div`
       }
     }
 
-    .scroll {
+    .scroll-container {
       width: 100%;
       overflow-y: auto;
       display: flex;
@@ -695,6 +695,7 @@ export const Feedbacks = styled.div`
         padding-bottom: 64px;
         display: flex;
         justify-content: center;
+        cursor: grab;
         flex: nowrap;
       }
 
@@ -715,7 +716,7 @@ export const Feedbacks = styled.div`
 
   @media (max-width: 680px) {
     div {
-      .scroll {
+      .scroll-container {
         padding: 0 24px;
       }
     }
@@ -808,6 +809,7 @@ export const FeedbackCard = styled.article<FeedbackCardProps>`
     position: absolute;
     right: 24px;
     bottom: 24px;
+    cursor: pointer;
 
     strong {
       margin-right: 16px;
