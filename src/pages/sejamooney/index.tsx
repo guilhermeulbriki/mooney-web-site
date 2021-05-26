@@ -1,4 +1,6 @@
 import React, { useCallback, useState } from 'react';
+import emailjs from 'emailjs-com';
+import InputMask from 'react-input-mask';
 
 import Footer from '../../components/footer';
 import Header from '../../components/header';
@@ -6,8 +8,6 @@ import Header from '../../components/header';
 import arrow from '../../assets/images/illustrations/arrow.svg';
 
 import { Container, HeaderComponent, BePart } from './styles';
-
-import emailjs from 'emailjs-com';
 
 const Sejamooney: React.FC = () => {
   const [schoolName, setSchoolName] = useState('');
@@ -92,11 +92,11 @@ const Sejamooney: React.FC = () => {
                 placeholder="Cargo"
                 type="text"
               />
-              <input
+              <InputMask
                 value={whatsapp}
                 onChange={(e) => setWhatsapp(e.target.value)}
-                placeholder="WhatsApp"
-                type="text"
+                placeholder="Whatsapp"
+                mask="(99) 99999-9999"
               />
               <input
                 value={message}
