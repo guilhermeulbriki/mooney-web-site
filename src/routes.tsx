@@ -7,10 +7,12 @@ import Mooneyapp from './pages/mooneyapp';
 import Mooneyedu from './pages/mooneyedu';
 import Parceiros from './pages/parceiros';
 import Sejamooney from './pages/sejamooney';
+import ScrollToTop from './utils/ScrollToTop';
 
 const Routes: React.FC = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/mooneyedu" component={Mooneyedu} exact />
