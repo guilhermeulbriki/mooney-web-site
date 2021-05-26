@@ -72,8 +72,8 @@ const Mooneyapp: React.FC = () => {
             <aside>
               <h2>Aplicativo gamificado. Jovens mais engajados!</h2>
               <p>
-                Hábitos financeiros saudáveis são construídos ao mesmo tempo que
-                jovem aprende e se diverte.
+                Hábitos financeiros saudáveis são construídos ao mesmo tempo em
+                que o jovem aprende e se diverte.
               </p>
             </aside>
           </Mockup>
@@ -95,8 +95,8 @@ const Mooneyapp: React.FC = () => {
               <h2>Jornada Mooney. Conheça a trilha do conhecimento!</h2>
               <p>
                 Área exclusiva para alunos dos colégios parceiros. Conteúdo
-                complementar aos temas tratados em sala de aula e muita
-                interatividade.
+                complementar aos temas tratados no ambiente de aprendizagem e
+                muita interatividade.
               </p>
             </aside>
           </Mockup>

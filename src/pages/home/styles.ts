@@ -61,6 +61,7 @@ export const HeaderContent = styled.header`
 
     img {
       margin-top: 120px;
+      cursor: pointer;
       animation: ${scrollIconAnimation} infinite 1.5s ease-in-out;
     }
   }

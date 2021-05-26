@@ -99,7 +99,7 @@ const Parceiros: React.FC = () => {
         </HeaderContent>
         <Partners>
           <div>
-            <h2>Mais de 50 colégios parceiros, conheça alguns:</h2>
+            <h2>Mais de 50 colégios parceiros. Conheça alguns:</h2>
             <div className="scroll">
               <div className="content">
                 <img src={camataraCollege} alt="College" />
@@ -159,7 +159,7 @@ const Parceiros: React.FC = () => {
                 url="https://www.youtube.com/watch?v=NH3tSiuGYKw"
               />
 
-              <p>Depoimento de Samuel, colégio Delta</p>
+              <p>Depoimento de Samuel Viana do colégio Delta</p>
             </section>
 
             <div className="scroll">

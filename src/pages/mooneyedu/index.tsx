@@ -78,10 +78,10 @@ const Mooneyedu: React.FC = () => {
               <article>
                 <h4>Acreditamos no desenvolvimento do professor!</h4>
                 <p>
-                  Acreditamos no desenvolvimento do professor, além dos
-                  treinamentos e capacitações contínuas para aplicar a
-                  metodologia em sala de aula, desenvolvemos a Educação
-                  Financeira do docente para a aplicação prática em sua vida.
+                  Além dos treinamentos e capacitações contínuas para aplicar a
+                  metodologia no ambiente de aprendizagem, desenvolvemos a
+                  Educação Financeira do docente para a aplicação prática em sua
+                  vida.
                 </p>
               </article>
             </section>
@@ -106,7 +106,7 @@ const Mooneyedu: React.FC = () => {
                 <span>
                   <img src={checkIcon} alt="Check icon" />
                   <p>
-                    Aulas dinâmicas e interativas: Alto Engajamento dos alunos
+                    Aulas dinâmicas e interativas: alto engajamento dos alunos
                   </p>
                 </span>
                 <span>
@@ -116,7 +116,7 @@ const Mooneyedu: React.FC = () => {
                 <span>
                   <img src={checkIcon} alt="Check icon" />
                   <p>
-                    Eventos especiais aos alunos, responsáveis e colaboradores
+                    Eventos especiais para alunos, responsáveis e colaboradores
                     dos colégios parceiros
                   </p>
                 </span>

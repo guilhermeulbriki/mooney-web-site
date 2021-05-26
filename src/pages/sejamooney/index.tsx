@@ -123,17 +123,17 @@ const Sejamooney: React.FC = () => {
             <div className="content">
               <article>
                 <strong>+ 50 colégios</strong>
-                <p>Faça parte dessa revolução</p>
+                <p>fazendo parte dessa revolução</p>
               </article>
 
               <article>
                 <strong>+ 10 estados</strong>
-                <p>Presentes em todo o Brasil</p>
+                <p>em todo o Brasil usam a Mooney</p>
               </article>
 
               <article>
                 <strong>+ 20 mil alunos</strong>
-                <p>Utilizando nossa metodologia</p>
+                <p>utilizando nossa metodologia</p>
               </article>
             </div>
           </section>
