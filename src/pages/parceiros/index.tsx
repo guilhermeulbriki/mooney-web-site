@@ -24,6 +24,7 @@ import imageFour from '../../assets/images/feedbacks/image-four.png';
 import imageFive from '../../assets/images/feedbacks/image-five.png';
 import imageSix from '../../assets/images/feedbacks/image-six.png';
 import imageSeven from '../../assets/images/feedbacks/image-seven.png';
+import imageEight from '../../assets/images/feedbacks/image-eight.png';
 
 import {
   Container,
@@ -60,7 +61,7 @@ const Parceiros: React.FC = () => {
       imageFive,
       imageSix,
       imageSeven,
-      imageSeven,
+      imageEight,
     ]);
   }, []);
 

@@ -61,6 +61,6 @@ export const FeedbacksData = [
     college: 'Colégio Objetivo Guaxupé',
     message:
       '“A Mooney trouxe uma metodologia inovadora, transformando a Educação Financeira em um estudo mais interativo e próximo da realidade dos alunos. As aulas, através de propostas relacionadas ao cotidiano, proporcionam a conscientização sobre o consumo, além de conhecimentos importantes para a organização e compreensão das finanças da família. O aplicativo, complementando as aulas, apresenta uma experiência de educação financeira na prática, oferecendo a possibilidade dos alunos gerenciarem o seu tempo e suas atividades de uma maneira mais dinâmica, compreendendo na prática que toda conquista requer esforços e dedicação.”',
-    picture: '../assets/imagens/feedbacks/image-seven.png',
+    picture: '../assets/imagens/feedbacks/image-eight.png',
   },
 ];

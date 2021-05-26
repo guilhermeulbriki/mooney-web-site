@@ -38,6 +38,7 @@ import imageFour from '../../assets/images/feedbacks/image-four.png';
 import imageFive from '../../assets/images/feedbacks/image-five.png';
 import imageSix from '../../assets/images/feedbacks/image-six.png';
 import imageSeven from '../../assets/images/feedbacks/image-seven.png';
+import imageEight from '../../assets/images/feedbacks/image-eight.png';
 
 import { FeedbacksData } from '../../data/feedbacks';
 
@@ -83,7 +84,7 @@ const Home: React.FC = () => {
       imageFive,
       imageSix,
       imageSeven,
-      imageSeven,
+      imageEight,
     ]);
   }, []);
 
