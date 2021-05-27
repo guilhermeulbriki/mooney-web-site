@@ -133,7 +133,7 @@ const Sejamooney: React.FC = () => {
 
               <article>
                 <strong>+ 20 mil alunos</strong>
-                <p>alcançados pela Educação Financeira</p>
+                <p>alcançados pela Mooney</p>
               </article>
             </div>
           </section>
