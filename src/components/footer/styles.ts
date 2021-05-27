@@ -79,6 +79,30 @@ export const Container = styled.footer`
             font-size: 16px;
             line-height: 22.4px;
             font-weight: 300;
+            position: relative;
+
+            &::after {
+              position: absolute;
+              content: '';
+              width: 0%;
+              height: 2px;
+              left: 0;
+              bottom: -4px;
+              background: var(--primary);
+              transition: width 0.4s;
+            }
+
+            &:hover {
+              color: var(--primary);
+            }
+
+            &:hover a {
+              color: var(--primary);
+            }
+
+            &:hover:after {
+              width: 100%;
+            }
           }
         }
 
@@ -94,9 +118,18 @@ export const Container = styled.footer`
 
           li {
             margin-top: 0px;
+            transition: transform 0.2s;
 
             & + li {
               margin-left: 8px;
+            }
+
+            &::after {
+              display: none;
+            }
+
+            &:hover {
+              transform: scale(1.1);
             }
           }
         }

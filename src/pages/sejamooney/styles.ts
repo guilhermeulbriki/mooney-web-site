@@ -269,7 +269,7 @@ export const BePart = styled.section`
     }
   }
 
-  @media (max-width: 920px) {
+  @media (max-width: 1100px) {
     > h2,
     strong {
       font-size: 20px;

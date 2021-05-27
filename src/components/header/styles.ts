@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
 interface SideMenuProps {
   isHidden: boolean;
@@ -7,6 +7,16 @@ interface SideMenuProps {
 interface HamburguerMenuProps {
   doRotation: boolean;
 }
+
+const dropdownAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  } to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+`;
 
 export const HeaderComponent = styled.header`
   width: 100vw;
@@ -45,10 +55,20 @@ export const HeaderComponent = styled.header`
 
         &.active {
           font-weight: 500;
+          color: var(--primary);
+        }
+
+        &.active a {
+          font-weight: 500;
+          color: var(--primary);
         }
 
         & + li {
           margin-left: 48px;
+        }
+
+        &:hover {
+          font-weight: 400;
         }
 
         &#dropdown ul {
@@ -56,11 +76,25 @@ export const HeaderComponent = styled.header`
           flex-direction: column;
           position: absolute;
           top: 64px;
+          left: -16px;
           background: var(--content-background);
           padding: 24px;
+          padding-right: 32px;
           height: auto;
-          box-shadow: 0px 2px 8px #cacbcd;
+          box-shadow: 0px 12px 24px rgba(35, 41, 49, 0.08);
           border-radius: 16px;
+
+          &::after {
+            position: absolute;
+            content: '';
+            background: var(--content-background);
+            width: 24px;
+            height: 24px;
+            transform: rotate(45deg);
+            top: -4px;
+            left: 32px;
+            z-index: -1;
+          }
 
           li {
             margin-left: 0;
@@ -80,11 +114,13 @@ export const HeaderComponent = styled.header`
           hr {
             margin: 16px 0 16px 0;
             border: 1px solid var(--text-silver);
+            opacity: 0.5;
           }
         }
 
         &#dropdown:hover ul {
           display: block;
+          animation: ${dropdownAnimation} 0.3s;
         }
       }
     }

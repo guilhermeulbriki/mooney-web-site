@@ -128,12 +128,12 @@ const Sejamooney: React.FC = () => {
 
               <article>
                 <strong>+ 10 estados</strong>
-                <p>em todo o Brasil usam a Mooney</p>
+                <p>espalhados pelo Brasil usam Mooney</p>
               </article>
 
               <article>
                 <strong>+ 20 mil alunos</strong>
-                <p>utilizando nossa metodologia</p>
+                <p>alcançados pela Educação Financeira</p>
               </article>
             </div>
           </section>
