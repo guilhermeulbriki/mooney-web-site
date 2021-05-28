@@ -24,7 +24,7 @@ const Contato: React.FC = () => {
 
       e.preventDefault(); // Prevents default refresh by the browser
       emailjs.send(
-        `service_lpg7yn4`,
+        `service_ce8spmn`,
         `template_7wz31lq`,
         templateParams,
         `user_RJZjlwjWFGihK1N5bgzPg`
