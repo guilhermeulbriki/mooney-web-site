@@ -83,7 +83,13 @@ const Footer: React.FC = () => {
             <strong>Siga-nos</strong>
             <ul>
               <li>
-                <img src={whatsapp} alt="Whatsapp" />
+                <a
+                  href="http://api.whatsapp.com/send?phone=5511971188008"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={whatsapp} alt="Whatsapp" />
+                </a>
               </li>
               <li>
                 <a
