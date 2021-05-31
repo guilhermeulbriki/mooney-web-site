@@ -34,7 +34,9 @@ const Contato: React.FC = () => {
       setEmail('');
       setQuestion('');
 
-      alert('E-mail enviado com sucesso!');
+      alert(
+        'Mensagem enviada. Nossa equipe entrará em contato com você em breve!'
+      );
     },
     [email, name, question]
   );

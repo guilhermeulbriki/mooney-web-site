@@ -204,7 +204,7 @@ const Home: React.FC = () => {
                 </StrategyCard>
                 <StrategyCard>
                   <img src={studentIcon} alt="Student icon" />
-                  <h4>Formação Integral do aluno</h4>
+                  <h4>Formação Integral do Aluno</h4>
                   <p>
                     Educação Financeira com o objetivo de preparar o aluno para
                     os desafios da vida.
@@ -215,7 +215,7 @@ const Home: React.FC = () => {
                   <h4>Inovação e Tecnologia</h4>
                   <p>
                     Recursos tecnológicos, atividades práticas, aulas divertidas
-                    e aplicativo gamificado{' '}
+                    e aplicativo gamificado.
                   </p>
                 </StrategyCard>
                 <img src={lineIcon} alt="Line" />
@@ -241,7 +241,7 @@ const Home: React.FC = () => {
               <aside>
                 <h2>#MooneyEdu</h2>
                 <p>
-                  Metodologia de alfabetização financeira para colégios.
+                  Metodologia de Alfabetização Financeira para colégios.
                   Educação Financeira trabalhada na sala de aula, utilizando
                   metodologias modernas e recursos tecnológicos.
                 </p>

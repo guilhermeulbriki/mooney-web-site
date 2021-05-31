@@ -38,7 +38,9 @@ const Sejamooney: React.FC = () => {
         `user_RJZjlwjWFGihK1N5bgzPg`
       );
 
-      alert('E-mail enviado com sucesso!');
+      alert(
+        'Mensagem enviada. Nossa equipe entrará em contato com você em breve!'
+      );
 
       setSchoolName('');
       setName('');
@@ -64,7 +66,7 @@ const Sejamooney: React.FC = () => {
                 Preencha os campos abaixo e fale com um consultor
               </h2>
               <p>
-                Vamos levar Educaçao e Alfabetização Financeira de qualidade
+                Vamos levar Educação e Alfabetização Financeira de qualidade
                 para seus alunos?
               </p>
 
