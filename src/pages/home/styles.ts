@@ -558,6 +558,8 @@ export const MooneyApp = styled.article`
 
   > img {
     margin-left: -100px;
+    object-fit: contain;
+    width: 50%;
   }
 
   aside {
@@ -600,10 +602,9 @@ export const MooneyApp = styled.article`
     }
   }
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1120px) {
     > img {
-      height: 252px;
-      object-fit: contain;
+      margin-left: -50px;
     }
   }
 
@@ -615,6 +616,7 @@ export const MooneyApp = styled.article`
     > img {
       margin-left: -100px;
       max-width: 100%;
+      width: auto;
       overflow-y: hidden;
     }
 
