@@ -183,7 +183,7 @@ export const HamburguerMenu = styled.button<HamburguerMenuProps>`
       ${(props) =>
         props.doRotation
           ? css`
-              transform: rotate(45deg);
+              transform: rotate(45deg) translateX(7px);
               position: absolute;
               width: 24px;
             `
@@ -200,7 +200,7 @@ export const HamburguerMenu = styled.button<HamburguerMenuProps>`
       ${(props) =>
         props.doRotation
           ? css`
-              transform: rotate(-45deg);
+              transform: rotate(-45deg) translateY(5px) translateX(2px);
               width: 24px;
             `
           : ''}

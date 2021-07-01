@@ -62,9 +62,6 @@ const Header: React.FC = () => {
             >
               <Link to="/partners">Parceiros</Link>
             </li>
-            <li className={pathname === '/blog' ? 'active tablet' : 'tablet'}>
-              Blog
-            </li>
             <li
               className={pathname === '/contact' ? 'active tablet' : 'tablet'}
             >
@@ -112,9 +109,6 @@ const Header: React.FC = () => {
           </li>
           <li className={pathname === '/partners' ? 'active tablet' : 'tablet'}>
             <Link to="/partners">Parceiros</Link>
-          </li>
-          <li className={pathname === '/blog' ? 'active tablet' : 'tablet'}>
-            Blog
           </li>
           <li className={pathname === '/contact' ? 'active tablet' : 'tablet'}>
             <Link to="/contact">Contato</Link>
