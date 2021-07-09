@@ -119,8 +119,8 @@ const Header: React.FC = () => {
             <Link to="/contact">Contato</Link>
           </li>
           <li>
-            <a target="blank" href="https://mooneyapp.com.br/">
-              https://jornada.mooneyapp.com.br/
+            <a target="blank" href="https://jornada.mooneyapp.com.br/">
+              Minha conta
             </a>
           </li>
         </ul>
